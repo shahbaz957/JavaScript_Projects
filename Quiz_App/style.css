@@ -1,0 +1,101 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #121212; /* Dark mode background */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container box */
+.container {
+  background-color: #1e1e1e;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+/* Title */
+.container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #f0f0f0;
+}
+
+/* Quiz area */
+#question-text {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+ul#choices-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+ul#choices-list li {
+  background-color: #2e2e2e;
+  margin: 10px 0;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+ul#choices-list li:hover {
+  background-color: #6a0dad;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5b00c2;
+}
+
+/* Hidden elements */
+.hidden {
+  display: none;
+}
+
+/* Score */
+#result-container h2 {
+  margin-bottom: 10px;
+}
+
+#score {
+  font-size: 2rem;
+  color: #00ffcc;
+}
+
+li.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+li.selected {
+  background-color: #6a0dad;
+  color: goldenrod;
+  font-weight: bold;
+}
